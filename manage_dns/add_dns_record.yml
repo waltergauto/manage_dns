@@ -1,0 +1,10 @@
+---
+- name: Manage DNS records
+  hosts: win
+  tasks:
+    - name: Add DNS record
+      community.windows.win_dns_record:
+        name: "cgyl1404p.dater.lab"
+        type: "A"
+        value: "10.1.1.1"
+        zone: "dater.lab"

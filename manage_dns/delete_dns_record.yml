@@ -1,0 +1,10 @@
+---
+- name: Manage DNS records
+  hosts: win
+  tasks:
+    - name: Remove static record
+      community.windows.win_dns_record:
+        name: "cgyl1404p.dater.lab"
+        type: "A"
+        state: absent
+        zone: "dater.lab"

@@ -1,0 +1,8 @@
+ansible_user: Administrator
+ansible_password: "Pa$$w0rd"
+ansible_port: 5985
+ansible_connection: winrm
+ansible_winrm_server_cert_validate: ignore
+#ansible_winrm_transport: basic
+#ansible_winrm_transport: kerberos
+ansible_winrm_transport: ntlm
